@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.weiwei</groupId>
+  <artifactId>weiwei-build-aggregate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>weiwei-build-aggregate</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Spring framework -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>4.1.6.RELEASE</version>
+	</dependency>
+  </dependencies>
+   
+  <modules>
+  	  <module>../weiwei-parent</module>
+      <module>../weiwei-processor</module>
+      <module>../weiwei-infrastructure-svc</module>
+      <module>../weiwei-intellectual-svc</module>
+      <module>../weiwei-centreservice-svc</module>
+      <module>../weiwei-admin</module>
+      <module>../weiwei-rest-service-master</module>
+  </modules>
+  
+</project>
